@@ -2,9 +2,15 @@
 
 Convert image to [Game Tile](https://leafletjs.com/examples/crs-simple/crs-simple.html)
 
-compile:
+## compile
 
 ```sh
 yarn
 yarn run compile
+```
+
+## usage
+
+```sh
+node dist/index.js ../tmp/Ghostscript_Tiger.svg ../tmp/tiger
 ```

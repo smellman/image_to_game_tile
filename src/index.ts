@@ -1,4 +1,3 @@
-import path from 'path'
 import { range } from './util'
 import { MakeTile } from './maketile'
 

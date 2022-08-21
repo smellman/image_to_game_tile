@@ -2,6 +2,8 @@ import path from 'path'
 import puppeteer from 'puppeteer'
 import { make_directories } from './make_directories'
 import { range } from './util'
+import { generateLeafletExample } from './leaflet-example'
+import { writeFileSync } from 'fs'
 
 type ImageType = 'SVG' | 'Image'
 
@@ -47,6 +49,9 @@ export class MakeTile {
         console.log(`finished zoom: ${z}`)
       })
     )
+    const html = generateLeafletExample(max_zoom)
+    const html_path = path.join(this.output_dir, 'index.html')
+    writeFileSync(html_path, html)
     console.log('done')
   }
 

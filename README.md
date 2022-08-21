@@ -14,3 +14,9 @@ yarn run compile
 ```sh
 node dist/index.js ../tmp/Ghostscript_Tiger.svg ../tmp/tiger
 ```
+
+## show the map
+
+```sh
+open ../tmp/tiger/index.html
+```
